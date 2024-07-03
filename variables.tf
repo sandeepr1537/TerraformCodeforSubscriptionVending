@@ -14,3 +14,12 @@ variable "billing_account_id" {
   description = "ID of the billing account for the subscription"
   type        = string
 }
+
+variable "policy_definition_id" {
+  description = "Policy Definition"
+}
+
+variable "principal_id" {
+  description = "Principal ID"
+  
+}

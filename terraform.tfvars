@@ -1,5 +1,5 @@
-# terraform.tfvars
+# variables.tfvars
 
-tenant_id           = "your-tenant-id"
-user_principal_name = "user@domain.com"
-subscription_id     = "your-subscription-id"
+subscription_name = "YourSubscriptionName"
+management_group_id = "YourManagementGroupID"
+billing_account_id = "YourBillingAccountID"

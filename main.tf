@@ -16,12 +16,12 @@ resource "azurerm_subscription" "new_subscription" {
 resource "azurerm_policy_assignment" "example_policy" {
   name               = "example-policy-assignment"
   scope              = azurerm_subscription.new_subscription.id
-  policy_definition_id = "/providers/Microsoft.Authorization/policyDefinitions/<policy_definition_id>"
+  policy_definition_id = var.policy_definition_id 
 }
 
 # Apply RBAC roles as needed
 resource "azurerm_role_assignment" "example_role" {
   scope                = azurerm_subscription.new_subscription.id
   role_definition_name = "Contributor"
-  principal_id         = "<principal_id>"
+  principal_id         = var.principal_id
 }

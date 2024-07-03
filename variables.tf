@@ -1,17 +1,16 @@
 # variables.tf
 
-
-variable "tenant_id" {
-  description = "The tenant ID of the Azure AD tenant"
+variable "subscription_name" {
+  description = "Name of the new subscription"
   type        = string
 }
 
-variable "user_principal_name" {
-  description = "The UPN of the user in Azure AD"
+variable "management_group_id" {
+  description = "ID of the management group where the subscription will be created"
   type        = string
 }
 
-variable "subscription_id" {
-  description = "Subscription ID where the resources will be provisioned"
+variable "billing_account_id" {
+  description = "ID of the billing account for the subscription"
   type        = string
 }

@@ -14,7 +14,7 @@ resource "azurerm_subscription" "new_subscription" {
 
 # Apply policies as needed
 resource "azurerm_policy_assignment" "example_policy" {
-  name               = "example-policy-assignment"
+  name               = "policy-assignment"
   scope              = azurerm_subscription.new_subscription.id
   policy_definition_id = var.policy_definition_id 
 }
